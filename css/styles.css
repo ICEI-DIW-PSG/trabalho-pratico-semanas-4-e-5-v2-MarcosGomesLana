@@ -94,16 +94,15 @@ h3 {
     color: #fff;
 }
 
+/*MENU MOBILE*/
 
-@media (max-width: 700px) {
-    #cabecalho {
-        grid-template-columns: auto 1fr; 
-    }
-    #logo { justify-self: start; }
-    #menu { justify-self: end; } 
-    #menu ul { gap: 16px; }
+#menuToggle{
+    display: none;
 }
 
+.menu-icon{
+    display: none;
+}
 
 
 /*CONTEÚDO PRINCIPAL*/
@@ -265,3 +264,149 @@ button{
 
 }
 
+/*RESPONSIVIDADE*/
+
+
+/* ESTILOS PARA TELAS PEQUENAS (MOBILE) */
+@media (max-width: 767px) {
+  /* CABEÇALHO */
+  #cabecalho {
+    grid-template-columns: 1fr; 
+    padding: 15px 10px;
+    justify-items: center;
+    display: absolute;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+  }
+
+  
+  #logo {
+     grid-column: 1;
+    justify-self: center; 
+    display: absolute;
+    max-width: 180px;
+    margin: 0;
+    
+  }
+
+  #menu {
+    grid-column: 1; 
+    justify-self: center;
+    margin-top: 15px; 
+  }
+
+  #menu ul {
+    flex-direction: column; 
+    text-align: center;
+    gap: 10px;
+  }
+
+  #menu li {
+    margin-top: 0;
+  }
+
+
+.menu-icon{
+    display: block;
+    height: inherit;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 20000;
+    
+}
+
+#menuToggle:checked ~ label i:nth-child(2){
+    display: block;
+}
+
+#menuToggle:checked ~ label i:first-child{
+    display: none;
+}
+
+#menuToggle:not(checked) ~ label i:first-child{
+    display: block;
+}
+
+#menuToggle:not(checked) ~ label i:nth-child(2){
+    display: none;
+}
+
+#menuToggle:checked ~ #cabecalho{
+    height: auto;
+}
+
+
+  /* CONTEÚDO PRINCIPAL */
+  main {
+    grid-template-rows: auto auto auto; 
+  }
+
+  article {
+    flex-direction: column; 
+    text-align: center;
+    gap: 30px;
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #imageAutor,
+  #imageLivros {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* FORMULÁRIO */
+  h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+
+  #gridForm {
+    width: 90%;
+    padding-bottom: 20px;
+    justify-items: center;
+  }
+}
+
+
+
+/* ESTILOS PARA TELAS DE TABLETS (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* CONTEÚDO PRINCIPAL */
+  article {
+    gap: 50px;
+    padding: 40px 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /* FORMULÁRIO */
+  #gridForm {
+    width: 60%;
+    
+  }
+}
+
+
+/* ESTILOS PARA TELAS DE DESKTOPS (a partir de 1024px) */
+@media (min-width: 1024px) {
+  
+}
