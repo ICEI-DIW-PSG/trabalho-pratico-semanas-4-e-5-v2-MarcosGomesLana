@@ -11,10 +11,10 @@ No trabalho dessa semana vamos evoluir o projeto para que a home-page funcione b
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Marcos Gomes de Oliveira Lana
+- Matricula: 899071
+- Proposta de projeto escolhida: Pessoas e Produções
+- Breve descrição sobre seu projeto: Este projeto tem como proposta divulgar grandes obras e conteúdos de autores de livros , além de oferecer um serviço de consulta sobre títulos ou trabalhos relacionados a eles.
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 

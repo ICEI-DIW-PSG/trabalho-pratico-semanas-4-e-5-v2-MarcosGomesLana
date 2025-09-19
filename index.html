@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Leia Comigo</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header id="cabecalho">
+        <img id="logo" src="logo.png" alt="Logo da Leia Comigo">
+        <nav class="menu">
+            <!-- Links do menu-->
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Autores</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Bloco Autores-->
+        <section id="blocoAutores">
+            <article>
+                <h2>Conheça grandes<br> autores!</h2>
+                <p>Descubra autores que mudaram a vida de mais de um<br> milhão de pessoas.<br>
+                    Seus livros atravessam gerações, despertam sentimentos<br> e compartilham conhecimentos que transformam<br>
+                    realidades. Aqui você encontra histórias que vão muito<br> além das páginas.</p>
+                <img id="autores"src="autor.jpg" alt="Imagem ilustrativa de autor">
+            </article>
+        </section>
+
+        <!--Bloco Livros-->
+        <section id="blocoLivros">
+            <article>
+                <img id="imageLivros" src="livro.jpg" alt="Imagem ilustrativa de livro">
+                <div id="textBlocoLivros">
+                <h2>Os livros que<br> você precisa<br> conhecer</h2>
+                <p>Seleção de títulos que marcaram a literatura e continuam<br> emocionando leitores ao redor do mundo.</p>
+                </div>
+            </article>
+        </section>
+
+        <!--Formulário-->
+        <section id="formulario">
+            <form>
+                <h3>Receba novidades dos nossos autores</h3>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+                <input type="email" id="email" name="email" placeholder="E-mail">
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="textRodape">
+        <p>© 2025 Leia Comigo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
