@@ -18,11 +18,20 @@ No trabalho dessa semana vamos evoluir o projeto para que a home-page funcione b
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Versão responsiva com CSS puro desktop](images/leiacomigoDeskTop.PNG)
+
+## Print da versão responsiva com CSS puro [IPAD]
+
+![Versão responsiva com CSS puro desktop ipad](images/leiaComigoIpad.PNG)
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Versão responsiva com CSS puro mobile](images/leiaComigoMobile.PNG)
+
+## Print da versão responsiva com CSS puro [BOOSTRAP] (*)
+
+![Versão responsiva com Boostrap](images/leiaComigoBoostrap.PNG)
+
 
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
